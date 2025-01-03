@@ -26,7 +26,7 @@ const Chatbot = () => {
       {/* 小图标按钮 */}
       {!isVisible && (
         <button className="chatbot-icon" onClick={toggleChatbot}>
-          <img src="/images/consult.png" alt="Chat Icon" className="chat-icon" />
+          <img src="./images/consult.png" alt="Chat Icon" className="chat-icon" />
         </button>
       )}
 

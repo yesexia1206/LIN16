@@ -38,7 +38,7 @@ const QASection = () => {
       <div className="qa-section">
         <div className="qa-container">
           <img
-            src="/images/Ellipse 29.png"
+            src="./images/Ellipse 29.png"
             alt="背景圖形"
             className="background-image"
           />

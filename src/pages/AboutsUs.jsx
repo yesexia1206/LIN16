@@ -13,7 +13,7 @@ const AboutUs = () => {
 const QASection = () => (
   <div className="qa-section">
     <div className="qa-container">
-      <img src="/images/Ellipse 29.png" alt="背景圖形" className="background-image" />
+      <img src="./images/Ellipse 29.png" alt="背景圖形" className="background-image" />
       <h1 className="qa">ABOUT US</h1>
       <h2 className="qa-title">關於我們</h2>
     </div>
@@ -30,7 +30,7 @@ const AboutSection = () => (
 
 const AboutVision = () => (
   <div className="about1">
-    <img src="/images/關於1.png" alt="關於1" className="about-image1" />
+    <img src="./images/關於1.png" alt="關於1" className="about-image1" />
     <div className="text1">
       <h3>公司願景</h3>
       <p>
@@ -66,13 +66,13 @@ const AboutOverview = () => (
         </div>
       </div>
     </div>
-    <img src="/images/關於2.png" alt="關於2" className="about-image2" />
+    <img src="./images/關於2.png" alt="關於2" className="about-image2" />
   </div>
 );
 
 const AboutHistory = () => (
   <div className="about3">
-    <img src="/images/關於3.png" alt="關於3" className="about-image3" />
+    <img src="./images/關於3.png" alt="關於3" className="about-image3" />
     <div className="text5">
       <h3>據點歷史</h3>
       <div className="about-container">
