@@ -1,0 +1,118 @@
+
+body{
+    margin: 0;
+}
+.privacy-body {
+    line-height: 1.6;
+    margin: 0; 
+    padding: 0;
+  
+    width: 100%;
+   
+    background: linear-gradient(to bottom,#EFF9FE 6%, white 25%);
+        height: 100%;  
+    
+   
+}
+.privacy {
+    font-family: 'Brahm One', sans-serif; 
+    color: #48A0F0;  
+    text-align: center; 
+    font-size: 24px;
+margin-right: 250px;
+    
+}
+.privacy::before, .privacy::after {
+    content: '•'; 
+    color: #48A0F0; 
+    font-size: 30px; 
+    margin: 0 10px; 
+}
+
+.container {
+
+    margin: 0 auto; 
+    
+    padding: 165px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+   
+}
+
+.title {
+    color: #333;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.header {
+    font-size: 20px;
+    color: #211715;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-box {
+    margin-top: 20px;
+    padding: 43px 55.73px 11.17px 55.73px; 
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.section p, .section ul {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* 小於768px（手機設備） */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;  
+        margin: 0 auto;    
+        padding: 10px;   
+       
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .header {
+        font-size: 14px; 
+    }
+
+    .content-box {
+        padding: 10px; 
+    }
+
+    .section h2 {
+        font-size: 1.2em; 
+    }
+
+    .section p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

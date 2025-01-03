@@ -1,0 +1,497 @@
+
+
+.c-body{
+
+    font-size: 18px;
+    @media (max-width:387px){
+        font-size: 15px;
+    }
+    
+.container2 {
+    position: relative; 
+    text-align: center;
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    flex-direction: column; 
+    .background-image-contact{
+        object-fit: cover;
+        @media (max-width:387px){
+            width: 200px;
+        }
+    }
+    .contact-h1{
+        transform: translate(-50%, -50%); 
+        color: #48A0F0;
+        font-family: 'Brahm One', sans-serif;
+        border-left: 5px solid #48A0F0;
+        padding-left: 10px;
+        position: absolute; 
+        top: 27%; 
+     margin-top: 30px;
+        font-size: 24px;
+        @media (max-width:387px){
+            font-size: 16px;
+            top: 32%;
+            left: 45%;
+        }
+    }
+    .contact-title{
+        position: absolute; 
+        top: 40%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        color: #000000; 
+        font-size: 30px; 
+        margin-top: 40px;
+
+        @media (max-width:387px){
+          font-size: 26px;
+          left: 52%;
+          top: 43%;
+        }
+    }
+  
+}
+  #member-form{
+
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    @media (max-width:865px){
+ left: 20%;
+ transform: none;
+ 
+    }
+   
+
+    @media (max-width:547px){
+        left: 0;
+     transform: none;
+     margin-left: 20px;
+     @media (max-width:387px){
+        margin-left: 5px;;
+    }
+    }
+    
+    .required{
+        margin-right: 20px;
+        color: white;
+        background-color: #48A0F0;
+        @media (max-width:387px){
+           margin-right: 5px;
+        }
+      
+    }
+    .gender,.phonenumber,.contact-time,.location,
+    .program,.form-group{
+        margin-left: 56px;
+        @media (max-width:387px){
+          margin-left: 35px;
+        }
+    }
+    legend {
+     
+        padding-inline: 0px;
+    }
+
+    .gender,.phonenumber,.contact-time,.location,
+    .program,.form-group,.required-2{
+        margin-top: 20px;
+    }
+
+
+
+    .phonenumber,.contact-time{
+        display: flex;
+
+    }
+    #username,#member1{
+        margin-left: 60px;
+        border-radius: 5px ;
+        @media (max-width:387px){
+            margin-left: 50px;
+        }
+        
+        
+    }
+    #username{
+    @media (max-width:387px){
+       width: 80px;
+       margin-left: 45px;
+    }
+}
+    #username,.phone-input input,#email{  
+@media (max-width:1032px){
+    width: 160px;
+}
+@media (max-width:913px){
+    width: 120px;
+}
+    }
+    .phone-input input{
+        margin-left: 24px;
+        border-radius: 5px;
+        @media (max-width:387px){
+           margin-left: 17px;
+        }
+    }
+    #email,.contact-time2,.location-select,
+    .program-select,#message{
+        margin-left: 24px;
+        border-radius: 5px;
+        @media (max-width:387px){
+          margin-left: 17px;
+        }
+    }
+    
+
+    .location-select,
+    .program-select{
+        width: 201px;
+        
+@media (max-width:1032px){
+    width: 160px;
+}
+@media (max-width:913px){
+    width: 120px;
+}
+    }
+
+
+
+
+
+.form-group{
+    display: flex;
+margin-bottom: 30px;
+
+
+
+
+}
+.message-content{
+    width: 220px;
+    height: 150px;
+border-radius: 5px;
+
+@media (max-width:1032px){
+    width: 200px;
+}
+
+        
+    @media (max-width:993px){
+        width: 160px;
+    }
+    
+@media (max-width:913px){
+    width: 140px;
+    height: 100px;
+}
+@media (max-width:301px){
+   width: 120px;
+   }
+        }
+
+
+
+
+.form-btn{
+    justify-content: center; 
+    align-items: center;
+    margin-top: 40px;
+    justify-items: center;
+    
+   margin-left: 160px;
+   @media (max-width:1032px){
+    margin-left: 150px;
+   }
+   @media (max-width:992px){
+    margin-left: 120px;
+   }
+   @media (max-width:886px){
+    margin-left: 145px;
+   }
+   @media (max-width:387px){
+    margin-left: 110px;
+}
+}
+
+.form-btn input[type="submit"], 
+.form-btn input[type="reset"] {
+    border: none; 
+    
+    color: white;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 20px; 
+    margin-right: 20px;
+    width: 90px;
+    height: 45px;
+
+    @media (max-width:886px){
+        padding:0%;
+        width: 65px;
+        height: 32px;
+    }
+    @media (max-width:301px){
+     margin-bottom: 20px;
+    }
+}
+
+
+.form-btn input[type="submit"]{
+    background-color: #cccccc;
+}
+.form-btn input[type="reset"]{
+    background-color: #cccccc;
+}
+
+.form-btn input[type="submit"]:hover, 
+.form-btn input[type="reset"]:hover {
+    background-color: #3498db; 
+}
+.form-note{
+   margin-top: 30px;
+   
+   text-align: center;
+  color: #494949;
+  font-size: 14px;
+  @media (max-width:886px){
+    text-align:none;
+} 
+@media (min-width:1024px){
+    font-size: 16px;
+}
+}
+
+    .wrap{
+        margin-right: 130px;
+    }
+    
+
+
+  }
+  
+.modal {
+    display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: white;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     padding: 20px;
+     z-index: 1000;
+     text-align: center;
+     width: 300px;
+    
+     @media (max-width:400px){
+       width: 250px;
+       
+       padding: 10px;
+       }
+       
+     @media (max-width:307px){
+        width: 200px;
+       
+        }
+ }
+ 
+ .overlay {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     z-index: 999;
+ }
+ 
+ .modal h6 {
+  
+    
+     margin-top: 5px;
+ }
+ 
+ .modal p {
+     margin:  0 20px 30px ; 
+     text-align: left;
+    line-height: 1.5;
+ }
+ 
+ .success-image {
+     width: 70%;
+     height: auto;
+     margin: 10px auto;
+ }
+ 
+ 
+ 
+ 
+ button {
+     background-color: #4AA38E;
+     color: white;
+     border: none;
+     padding: 20px 30px;
+     cursor: pointer;
+     border-radius: 7px;
+     
+     @media (max-width:400px){
+   padding: 15px 25px;
+
+        }
+ }
+ 
+ .contact-time {
+    display: flex;
+    align-items: flex-start; 
+  }
+  
+  .contact-time2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+  }
+  
+  .contact-time2 label {
+    display: inline-flex; 
+    align-items: center; 
+    margin-bottom: 8px;
+  }
+  
+  .contact-time2 input[type="radio"] {
+    margin-right: 8px; 
+  }
+  
+       
+
+ 
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="radio"],
+select,
+textarea {
+  border: 1px solid #ccc; 
+  background-color: #f9f9f9;
+  color: #333; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  transition: border-color 0.3s ease; /* 邊框變化的過渡效果 */
+}
+
+/* 當獲得焦點時的樣式 */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #3498db; /* 焦點時的邊框顏色 */
+  background-color: #ffffff; /* 焦點時的背景顏色 */
+  outline: none; /* 移除預設的焦點樣式 */
+}
+label[for="member1"] {
+    margin-right: 10px;
+  }
+
+
+
+
+  .c-body #member-form .wrap {
+    @media (max-width:886px){
+        margin-right: 0%;
+    }
+
+
+}
+
+
+
+@media (min-width: 1088px) {
+    
+  
+    /* 參觀時段 */
+    .gender,.required-1,.contact-time,.location,.program,.required-2 {
+      display: flex;
+      align-items: center;
+  
+    }
+   
+    
+     .c-body{
+            font-size: 24px;
+            
+                #member-form .wrap{
+                    margin: 0;
+                }
+            
+        
+    }
+    #member-form .required {
+        margin-right: 40px !important;;
+      }
+
+      input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  height : 25px; /* 輸入框寬度與父容器一致 */
+  box-sizing: border-box;
+}
+.c-body #member-form .gender, .c-body #member-form .phonenumber, .c-body #member-form .contact-time, .c-body #member-form .location, .c-body #member-form .program, .c-body #member-form .form-group {
+    margin-left: 88px;
+}
+
+
+.c-body #member-form #username, .c-body #member-form #member1 {
+    margin-left: 120px;
+  
+}
+.c-body #member-form #email, .c-body #member-form .contact-time2, .c-body #member-form .location-select, .c-body #member-form .program-select, .c-body #member-form #message ,#member-form .phone-input input {
+    margin-left: 72px !important;  
+    border-radius: 5px;
+}
+
+.message-content{
+    width: 300px !important; 
+    height: 250px !important;
+}
+.form-btn{
+    margin-left: 300px !important;
+}
+.form-note{
+    margin-left: 210px;
+    
+}
+
+.c-body #member-form .gender, .c-body #member-form .phonenumber, .c-body #member-form .contact-time, .c-body #member-form .location, .c-body #member-form .program, .c-body #member-form .form-group, .c-body #member-form .required-2 {
+    margin-top: 30px;
+}
+.modal{
+    width: 400px !important;;
+    
+}
+.modal p{
+    line-height: 2 !important;
+   }  
+}
+
+@media (min-width: 1310px){
+    .form-note{
+        margin-left: 170px;
+    }
+}

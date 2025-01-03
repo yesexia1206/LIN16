@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* 小圖標按鈕樣式 */
+.chatbot-icon {
+  position: fixed;
+  bottom: 100px;
+  right: 80px;
+  width: 80px; /* 按鈕大小 */
+  height: 80px; /* 按鈕大小 */
+  border: none;
+  background: none; /* 移除按鈕背景 */
+  padding: 0; /* 移除內邊距 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default; /* 默認情況下不顯示手勢 */
+}
+
+/* 圖片本身樣式 */
+.chat-icon {
+  width: 150%; /* 填滿按鈕寬度 */
+  height: 150%; /* 填滿按鈕高度 */
+  object-fit: contain; /* 保持圖片比例完整 */
+  transition: transform 0.3s ease;
+}
+
+/* 懸浮時僅改變指標，不改變顏色 */
+.chat-icon:hover {
+  transform: scale(1.1); /* 圖片放大10% */
+  cursor: pointer; /* 顯示手勢 */
+}
+
+/* 防止按鈕整體受到懸浮影響 */
+.chatbot-icon:hover {
+  background: none; /* 確保背景無變化 */
+}
+
+/* 聊天機器人主體 */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* 聊天框標題 */
+.chat-header {
+  background-color: #48a0f0;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 關閉按鈕 */
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 聊天內容區 */
+.chatbox {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto; /* 支援滾動 */
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; /* 垂直排列訊息框 */
+  gap: 10px; /* 訊息之間的間距 */
+}
+
+/* 訊息樣式 */
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.message.user {
+  background-color: #c8e6c9; /* 綠色背景 */
+  text-align: right;
+  margin-left: auto;
+  padding: 8px 12px; /* 調整內部間距，讓內容更緊湊 */
+  border-radius: 12px; /* 更平滑的圓角 */
+  max-width: 50%; /* 限制寬度為容器的 50% */
+  display: inline-block; /* 根據內容縮放框的大小 */
+  word-wrap: break-word; /* 長文字自動換行 */
+}
+
+.message.bot {
+  background-color: #e0f7fa;
+  text-align: left;
+  margin-right: auto;
+}
+
+/* 輸入區 */
+.input-container {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.input-container button {
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #48a0f0;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.input-container button:hover {
+  background-color: #357abd;
+}/*# sourceMappingURL=robot.css.map */
