@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/qa.min.css";
+import Footer from "../Footer";
 
 const QAItem = ({ question, answer, index }) => {
   return (
@@ -33,7 +34,7 @@ const QASection = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  return (
+  return (<>
     <div className="qa-body">
       <div className="qa-section">
         <div className="qa-container">
@@ -58,6 +59,10 @@ const QASection = () => {
         ))}
       </div>
     </div>
+    <div style={{marginTop:'125vh'}}>
+    <Footer/>
+    </div>
+    </>
   );
 };
 

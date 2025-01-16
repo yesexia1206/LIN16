@@ -2,13 +2,14 @@ import React, { useEffect } from "react";
 import "../css/contac.min.css";
 import { initializeModalLogic } from "../assets/111.js"; 
 import Chatbot from "./Chatbot.jsx";
+import Footer from "../Footer.jsx";
 
 const ReservationForm = () => {
   useEffect(() => {
     initializeModalLogic(); // 初始化外部邏輯
   }, []); // 僅在組件掛載時執行一次
 
-  return (
+  return (<>
     <div className="c-body">
       <div className="container2">
         <img src="./images/Ellipse 29.png" alt="背景圖形" className="background-image-contact" />
@@ -99,6 +100,10 @@ const ReservationForm = () => {
         <button id="close-modal">關閉</button>
       </div>
     </div>
+    <div style={{marginTop:'117vh'}}>
+      <Footer/>
+    </div>
+    </>
   );
 };
 

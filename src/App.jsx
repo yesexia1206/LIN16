@@ -4,6 +4,8 @@ import Privacy from "./pages/privacy";
 import QASection from "./pages/QASection";
 import ReservationForm from "./pages/ReservationForm";
 import Chatbot from "./pages/Chatbot";
+import Footer from "./Footer";
+
 //import "./App.css";
 
 export default function App() {
