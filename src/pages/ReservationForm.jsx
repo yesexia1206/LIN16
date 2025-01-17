@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import "../css/contac.min.css";
-import { initializeModalLogic } from "../assets/111.js"; 
+import { initializeModalLogic } from "../assets/111.js";
 import Chatbot from "./Chatbot.jsx";
 import Footer from "../Footer.jsx";
+import Topbar from "../Topbar.jsx";
 
 const ReservationForm = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const ReservationForm = () => {
   }, []); // 僅在組件掛載時執行一次
 
   return (<>
+    <Topbar />
     <div className="c-body">
       <div className="container2">
         <img src="./images/Ellipse 29.png" alt="背景圖形" className="background-image-contact" />
@@ -43,22 +45,22 @@ const ReservationForm = () => {
             <input type="email" name="email" id="email" title="聯絡信箱" required />
           </div>
           <legend className="contact-time">
-  參觀時段
-  <div className="contact-time2">
-    <label>
-      <input type="radio" name="time" id="time1" title="早" value="早上8~中午12點" />
-      早上8~中午12點
-    </label>
-    <label>
-      <input type="radio" name="time" id="time2" title="午" value="中午12~下午1點" />
-      中午12~下午1點
-    </label>
-    <label>
-      <input type="radio" name="time" id="time3" title="下午" value="下午1點~5點" />
-      下午1點~5點
-    </label>
-  </div>
-</legend>
+            參觀時段
+            <div className="contact-time2">
+              <label>
+                <input type="radio" name="time" id="time1" title="早" value="早上8~中午12點" />
+                早上8~中午12點
+              </label>
+              <label>
+                <input type="radio" name="time" id="time2" title="午" value="中午12~下午1點" />
+                中午12~下午1點
+              </label>
+              <label>
+                <input type="radio" name="time" id="time3" title="下午" value="下午1點~5點" />
+                下午1點~5點
+              </label>
+            </div>
+          </legend>
 
           <div className="location">
             <label htmlFor="location">諮詢據點</label>
@@ -100,10 +102,10 @@ const ReservationForm = () => {
         <button id="close-modal">關閉</button>
       </div>
     </div>
-    <div style={{marginTop:'117vh'}}>
-      <Footer/>
+    <div style={{ marginTop: '117vh' }}>
+      <Footer />
     </div>
-    </>
+  </>
   );
 };
 

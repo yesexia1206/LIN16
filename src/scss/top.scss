@@ -1,271 +1,271 @@
-#topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 10px 20px;
+// #topbar {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items:center;
+//     padding: 10px 20px;
 
-}
-
-
-
-.logoBar {
-    display: flex;
-    align-items: center;
-    height: 80px;
-}
-.navbar{
-    display: flex;
-}
-.hamburger{
-    display: none;
-}
+// }
 
 
 
+// .logoBar {
+//     display: flex;
+//     align-items: center;
+//     height: 80px;
+// }
+// .navbar{
+//     display: flex;
+// }
+// .hamburger{
+//     display: none;
+// }
 
 
-.navbar img{
-    width: 130px;
+
+
+
+// .navbar img{
+//     width: 130px;
     
-}
-.navigation button{
-    background-color: #48A0F0;
-    border: none;
-    border-radius: 30px;
-    padding: 0 15px;
-    cursor: pointer;
-    display: block;
-}
-.navigation button:hover{
-    background-color:#002ead;
-    transition: 0.7s;
-}
-#topbar .navigation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    justify-content: space-between;
-}
+// }
+// .navigation button{
+//     background-color: #48A0F0;
+//     border: none;
+//     border-radius: 30px;
+//     padding: 0 15px;
+//     cursor: pointer;
+//     display: block;
+// }
+// .navigation button:hover{
+//     background-color:#002ead;
+//     transition: 0.7s;
+// }
+// #topbar .navigation {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     padding: 0;
+//     margin: 0;
+//     justify-content: space-between;
+// }
 
-#topbar .menu {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 10px;
-    margin: 10px;
-}
+// #topbar .menu {
+//     display: flex;
+//     justify-content: space-around;
+//     padding: 0 10px;
+//     margin: 10px;
+// }
 
-#topbar a:visited {
+// #topbar a:visited {
 
-    color: #494949;
+//     color: #494949;
 
-}
+// }
 
-#topbar a:hover {
-    color: #48A0F0;
-}
+// #topbar a:hover {
+//     color: #48A0F0;
+// }
 
-#topbar .menu li {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 40px;
-}
-
-
+// #topbar .menu li {
+//     display: flex;
+//     justify-content: space-around;
+//     margin: 0 40px;
+// }
 
 
 
 
-@media (max-width:1200px){
 
-    #topbar .navigation .menu li {
+
+// @media (max-width:1200px){
+
+//     #topbar .navigation .menu li {
   
-        margin: 0 15px;
-    }
-}
+//         margin: 0 15px;
+//     }
+// }
 
 
 
 
 
 
-@media (min-width:1024px) {
-    #topbar {
+// @media (min-width:1024px) {
+//     #topbar {
        
-        .hamburger {
-            display: none
-        }
+//         .hamburger {
+//             display: none
+//         }
 
        
-    }
-}
+//     }
+// }
 
 
 
-@media (max-width:1023px) {
-    #topbar {
+// @media (max-width:1023px) {
+//     #topbar {
         
-       align-items: flex-start;
+//        align-items: flex-start;
 
-        .navbar {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            margin-top: 10px;
-            .hamburger {
+//         .navbar {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-end;
+//             margin-top: 10px;
+//             .hamburger {
         
-                background-color: transparent;
-                border: none;
+//                 background-color: transparent;
+//                 border: none;
               
-                    display: block; 
+//                     display: block; 
                 
-                .bar {
-                    display: block;
-                    width: 50px;
-        height: 10px;
-        background-color: #444;
-        margin: 8px auto;
-                    transition: .4s;
-                }
+//                 .bar {
+//                     display: block;
+//                     width: 50px;
+//         height: 10px;
+//         background-color: #444;
+//         margin: 8px auto;
+//                     transition: .4s;
+//                 }
 
-                &.is-active {
-                    .bar {
-                        &:nth-child(1) {
-                            transform: rotate(45deg) translateY(6px) translateX(5px);
-                        }
+//                 &.is-active {
+//                     .bar {
+//                         &:nth-child(1) {
+//                             transform: rotate(45deg) translateY(6px) translateX(5px);
+//                         }
 
-                        &:nth-child(2) {
-                            opacity: 0;
-                        }
+//                         &:nth-child(2) {
+//                             opacity: 0;
+//                         }
 
-                        &:nth-child(3) {
-                            transform: rotate(-45deg) translateY(-6px) translateX(5px);
-                        }
-                    }
-                }
-            }
+//                         &:nth-child(3) {
+//                             transform: rotate(-45deg) translateY(-6px) translateX(5px);
+//                         }
+//                     }
+//                 }
+//             }
 
-            .navigation {
-                align-items: center;
-                background-image: linear-gradient( 4deg,rgba(255, 255, 255, 0.3),rgba(255, 255, 255, .15) 55%,rgba(255, 255, 255, .4));
-                backdrop-filter: brightness(120%) blur(5px);
-                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-                padding: 0 0 10px 10px;
-                border-radius: 10px;
+//             .navigation {
+//                 align-items: center;
+//                 background-image: linear-gradient( 4deg,rgba(255, 255, 255, 0.3),rgba(255, 255, 255, .15) 55%,rgba(255, 255, 255, .4));
+//                 backdrop-filter: brightness(120%) blur(5px);
+//                 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+//                 padding: 0 0 10px 10px;
+//                 border-radius: 10px;
             
-                display: none;
-                position: relative;
-                z-index: 10;
+//                 display: none;
+//                 position: relative;
+//                 z-index: 10;
              
-                animation: hide .35s both;
+//                 animation: hide .35s both;
 
-                .menu {
-                    flex-direction: column;
-                    order: -1;
-                    margin-top: 20px;
-                    margin-bottom: 15px;
+//                 .menu {
+//                     flex-direction: column;
+//                     order: -1;
+//                     margin-top: 20px;
+//                     margin-bottom: 15px;
 
-                    li{
-                        display: flex
-;
-    justify-content: space-around;
-    margin: 8px 20px;
-                    }
-                }
+//                     li{
+//                         display: flex
+// ;
+//     justify-content: space-around;
+//     margin: 8px 20px;
+//                     }
+//                 }
 
-                &.show {
-                    display: flex;
-                    flex-direction: column;
-                    animation: show .35s both;
-                }
-                button{
-                    margin-right: 5px;
-                }
-            }
-        }
-    }
-}
+//                 &.show {
+//                     display: flex;
+//                     flex-direction: column;
+//                     animation: show .35s both;
+//                 }
+//                 button{
+//                     margin-right: 5px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
-@media (max-width:593px){
+// @media (max-width:593px){
 
-    #topbar .logoBar h2 {
+//     #topbar .logoBar h2 {
     
-        font-size: 15px;
+//         font-size: 15px;
        
-    }
-    #topbar .navbar .hamburger .bar {
-        display: block;
-        width: 30px;
-        height: 4px;
-        background-color: #444;
-        margin: 8px auto;
-        transition: .4s;
-    }
+//     }
+//     #topbar .navbar .hamburger .bar {
+//         display: block;
+//         width: 30px;
+//         height: 4px;
+//         background-color: #444;
+//         margin: 8px auto;
+//         transition: .4s;
+//     }
     
-        #topbar .navbar .navigation .menu li {
-            display: flex;
-          font-size: 15px;
-            justify-content: space-around;
-            margin: 8px 20px;
-        }
-        .navigation button {
-            background-color: #48a0f0;
-            border: none;
-            border-radius: 30px;
-            display: block;
+//         #topbar .navbar .navigation .menu li {
+//             display: flex;
+//           font-size: 15px;
+//             justify-content: space-around;
+//             margin: 8px 20px;
+//         }
+//         .navigation button {
+//             background-color: #48a0f0;
+//             border: none;
+//             border-radius: 30px;
+//             display: block;
           
-            cursor: pointer;
-        }
-        #topbar .navbar{
-            margin-top: 15px;
-        }
-        .navbar img {
-            width: 80px;
-        }
-    }
+//             cursor: pointer;
+//         }
+//         #topbar .navbar{
+//             margin-top: 15px;
+//         }
+//         .navbar img {
+//             width: 80px;
+//         }
+//     }
 
 
-@media (max-width:489px){
+// @media (max-width:489px){
 
-    #topbar .logoBar h2 {
+//     #topbar .logoBar h2 {
     
-        font-size: 12px;
+//         font-size: 12px;
        
-    }
-    #topbar .navigation .menu a {
-        font-size: 12px;
+//     }
+//     #topbar .navigation .menu a {
+//         font-size: 12px;
    
-}
-}
+// }
+// }
 
 
-@media (max-width:445px){
+// @media (max-width:445px){
 
-    #topbar .logoBar h2 {
+//     #topbar .logoBar h2 {
     
-       display: none;
+//        display: none;
        
-    }
+//     }
    
-}
+// }
 
 
-@media (max-width:337px){
+// @media (max-width:337px){
 
-    #topbar .logoBar .logo img {
-        width: 100px;
+//     #topbar .logoBar .logo img {
+//         width: 100px;
    
-}
+// }
        
-    }
+//     }
   
-@media (max-width:294px){
-    #topbar .logoBar .logo img {
-        width: 80px;
+// @media (max-width:294px){
+//     #topbar .logoBar .logo img {
+//         width: 80px;
     
-    }
+//     }
     
        
-}
+// }

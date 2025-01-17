@@ -1,8 +1,10 @@
 import React from "react";
-import "../css/privacy.min.css"; 
+import "../css/privacy.min.css";
 import Footer from "../Footer";
+import Topbar from "../Topbar";
 const Privacy = () => {
   return (<>
+    <Topbar />
     <div className="privacy-body">
       <div className="container">
         <h1 className="privacy">PRIVACY</h1>
@@ -111,10 +113,10 @@ const Privacy = () => {
         </ContentBox>
       </div>
     </div>
-    <div style={{marginTop:'0vh'}}>
-      <Footer/>
+    <div style={{ marginTop: '0vh' }}>
+      <Footer />
     </div>
-    </>
+  </>
   );
 };
 

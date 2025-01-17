@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Noto+Sans+TC:wght@100..900&display=swap');
+/* 首頁 */
+/* Topbar */
+#topbar {
+    font-family: "Noto Sans TC", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    position: fixed;
+    background-color: #FFF;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+
+    color: #494949;
+    box-sizing: border-box;
+    font-weight: 400;
+
+}
+
+#topbar .logo {
+    width: 100px;
+}
+
+.logoBar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar img {
+    width: 130px;
+
+}
+
+.navigation button {
+    background-color: #48A0F0;
+    border: none;
+    border-radius: 30px;
+    padding: 0 15px;
+}
+
+.navigation button:hover {
+    background-color: #002ead;
+    transition: 0.7s;
+}
+
+#topbar .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+#topbar .menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+#topbar a {
+
+    color: #494949;
+
+}
+
+#topbar a:visited {
+
+    color: #494949;
+
+}
+
+#topbar a:hover {
+    color: #48A0F0;
+}
+
+#topbar .menu li {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 40px;
+}

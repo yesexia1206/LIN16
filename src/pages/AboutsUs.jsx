@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "../css/about.min.css"; // 引入您的 CSS
 import Footer from "../Footer";
+import Topbar from "../Topbar";
 
 const AboutUs = () => {
   return (<>
+    <Topbar />
     <div className="qa-body">
       <QASection />
       <AboutSection />
     </div>
-    <div style={{marginTop:'11vh'}}>
-          <Footer/>
+    <div style={{ marginTop: '11vh' }}>
+      <Footer />
     </div>
-</>
+  </>
   );
 };
 

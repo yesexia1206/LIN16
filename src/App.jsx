@@ -11,10 +11,10 @@ import Footer from "./Footer";
 export default function App() {
   return (
     <>
-    <Link to="/aboutUs">關於我們</Link>
+    {/* <Link to="/aboutUs">關於我們</Link>
     <Link to="/privacy">隱私權政策</Link>
     <Link to="/qaSection">QA</Link>
-    <Link to="/reservationForm">預約參觀</Link>
+    <Link to="/reservationForm">預約參觀</Link> */}
       <Routes>
         {/* <Route path="/" element={<Home />}></Route> */}
         <Route path="/aboutUs" element={<AboutUs />}></Route>
