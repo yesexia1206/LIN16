@@ -5,6 +5,7 @@ import QASection from "./pages/QASection";
 import ReservationForm from "./pages/ReservationForm";
 import Chatbot from "./pages/Chatbot";
 import Footer from "./Footer";
+import Home from "./pages/Home";
 
 //import "./App.css";
 
@@ -16,13 +17,13 @@ export default function App() {
     <Link to="/qaSection">QA</Link>
     <Link to="/reservationForm">預約參觀</Link> */}
       <Routes>
-        {/* <Route path="/" element={<Home />}></Route> */}
+        <Route path="/" element={<Home />}></Route>
         <Route path="/aboutUs" element={<AboutUs />}></Route>
         <Route path="/privacy" element={<Privacy />}></Route>
         <Route path="/qaSection" element={<QASection />}></Route>
         <Route path="/reservationForm" element={<ReservationForm />}></Route>
       </Routes>
-      <Chatbot/>
+      {/* <Chatbot/> */}
     </>
   )
 }

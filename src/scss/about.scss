@@ -1,5 +1,8 @@
 /*---------------------------------------*/
-
+@font-face {
+    font-family: 'sundaytime';
+    src: url(../SundayTime.otf);
+}
 
 
 
@@ -98,7 +101,7 @@ a {
 
         .qa-title {
             position: absolute;
-            top: 58%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 35px;
@@ -106,14 +109,22 @@ a {
             z-index: 2;
         }
 
+        @media (max-width:1006px) {
+            .qa-title{
+                font-size: 26px !important;
+                top: 45% !important;
+            }
+        }
+
         .qa {
             font-size: 24px;
-            font-family: "Braah One", "Noto Sans TC", sans-serif;
+            // font-family: "Braah One", "Noto Sans TC", sans-serif;
+            font-family: 'sundaytime';
             color: #48a0f0;
-            border-left: 5px solid #48a0f0;
+            // border-left: 5px solid #48a0f0;
             padding-left: 10px;
             position: absolute;
-            top: 27%;
+            top: 22%;
             transform: translateX(-50%);
             z-index: 2;
         }
@@ -305,4 +316,5 @@ a {
 
 .qa-body {
     overflow-x: hidden;
+    font-family: "Noto Sans TC", sans-serif;
 }

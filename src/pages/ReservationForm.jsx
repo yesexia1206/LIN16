@@ -102,9 +102,10 @@ const ReservationForm = () => {
         <button id="close-modal">關閉</button>
       </div>
     </div>
-    <div style={{ marginTop: '117vh' }}>
+    <div id="ftc">
       <Footer />
     </div>
+    <Chatbot/>
   </>
   );
 };
