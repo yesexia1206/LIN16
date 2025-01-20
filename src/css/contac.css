@@ -110,6 +110,11 @@ a {
     font-size: 15px;
   }
 }
+@media (max-width: 450px) {
+  .c-body {
+    margin-top: 0;
+  }
+}
 .c-body .container2 {
   position: relative;
   text-align: center;

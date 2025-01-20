@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './css/Footer.min.css';
 export default function Footer() {
     return (
@@ -20,11 +21,11 @@ export default function Footer() {
             <nav className="footer-map">
                 <ul className="footer-menu">
                     <li><a href="https://yesexia1206.github.io/HappyWork1/KF/location.html">共享方案</a></li>
-                    <li><a href="https://yesexia1206.github.io/LIN16/reservationForm">預約參觀</a></li>
+                    <li><Link to='/reservationForm'>預約參觀</Link></li>
                     <li><a href="https://yesexia1206.github.io/HappyWork/memberCenter">會員中心</a></li>
-                    <li><a href="https://yesexia1206.github.io/LIN16/aboutUs">關於我們</a></li>
+                    <li><Link to='/aboutUs'>關於我們</Link></li>
                     <li><a href="https://yesexia1206.github.io/HappyWork1/KF/page-location.html">服務據點</a></li>
-                    <li><a href="https://yesexia1206.github.io/LIN16/privacy">隱私政策</a></li>
+                    <li><Link to='/privacy'>隱私政策</Link></li>
                 </ul>
             </nav>
 

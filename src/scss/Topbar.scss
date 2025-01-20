@@ -1,4 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Noto+Sans+TC:wght@100..900&display=swap');
+// /* 首頁 */
+// /* Topbar */
+// #topbar {
+//     font-family: "Noto Sans TC", sans-serif;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px 20px;
+
+//     position: fixed;
+//     background-color: #FFF;
+//     width: 100%;
+//     z-index: 999;
+//     top: 0;
+
+//     color: #494949;
+//     box-sizing: border-box;
+//     font-weight: 400;
+
+// }
+
+// #topbar .logo {
+//     width: 100px;
+// }
+
+// .logoBar {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .navbar {
+//     display: flex;
+// }
+
+// .hamburger {
+//     display: none;
+// }
+
+// .navbar img {
+//     width: 130px;
+
+// }
+
+// .navigation button {
+//     background-color: #48A0F0;
+//     border: none;
+//     border-radius: 30px;
+//     padding: 0 15px;
+// }
+
+// .navigation button:hover {
+//     background-color: #002ead;
+//     transition: 0.7s;
+// }
+
+// #topbar .navigation {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     padding: 0;
+//     margin: 0;
+//     justify-content: space-between;
+// }
+
+// #topbar .menu {
+//     display: flex;
+//     justify-content: space-around;
+//     padding: 0 10px;
+//     margin: 10px;
+// }
+
+// #topbar a {
+
+//     color: #494949;
+
+// }
+
+// #topbar a:visited {
+
+//     color: #494949;
+
+// }
+
+// #topbar a:hover {
+//     color: #48A0F0;
+// }
+
+// #topbar .menu li {
+//     display: flex;
+//     justify-content: space-around;
+//     margin: 0 40px;
+// }
+
 /* 首頁 */
 /* Topbar */
 #topbar {
@@ -21,7 +114,7 @@
 }
 
 #topbar .logo {
-    width: 100px;
+    width: 121px;
 }
 
 .logoBar {
@@ -90,4 +183,100 @@
     display: flex;
     justify-content: space-around;
     margin: 0 40px;
+}
+
+
+
+
+/* 漢堡按鈕樣式 */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+/* 漢堡按鈕的三條線 */
+.hamburger::before,
+.hamburger::after,
+.hamburger span {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #494949;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    top: 8px;
+}
+
+.hamburger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger::after {
+    bottom: 8px;
+}
+
+/* 漢堡按鈕點擊後的動畫效果 */
+.hamburger.active::before {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active span {
+    opacity: 0;
+}
+
+.hamburger.active::after {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* RWD 設定 */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #topbar .navigation {
+        padding: 0;
+    }
+
+    .navbar .navigation {
+        position: fixed;
+        top: 60px; /* 配合topbar高度 */
+        left: -100%;
+        width: 100%;
+        /* height: calc(100vh - 60px); */
+        background-color: #FFF;
+        flex-direction: column;
+        transition: 0.3s;
+        justify-content: center;/**/
+    }
+
+    .navbar .navigation.active {
+        left: 0;
+    }
+
+    #topbar .menu {
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #topbar .menu li {
+        margin: 15px 0;
+    }
+
+    .navigation button {
+        margin: 20px auto;
+    }
 }
